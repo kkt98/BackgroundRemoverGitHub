@@ -45,6 +45,10 @@ class MainActivity : AppCompatActivity() {
             binding.imageView.setBackgroundColor(Color.parseColor("#00CC66"))
         }
 
+        binding.button3.setOnClickListener {
+            binding.imageView.setBackgroundColor(Color.parseColor("#0080ff"))
+        }
+
     }
 
     private fun removeBg() { binding.imageView.invalidate()
