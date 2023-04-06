@@ -1,6 +1,7 @@
 package com.example.backgroundremovergithub
 
 import android.graphics.Bitmap
+import android.graphics.Color
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -30,11 +31,20 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        imageResult.launch("image/*")
+//        imageResult.launch("image/*")
 
         binding.delete1.setOnClickListener {
             removeBg()
         }
+
+        binding.button.setOnClickListener {
+            binding.imageView.setBackgroundColor(Color.parseColor("#964b00"));
+        }
+
+        binding.button2.setOnClickListener {
+            binding.imageView.setBackgroundColor(Color.parseColor("#00CC66"))
+        }
+
     }
 
     private fun removeBg() { binding.imageView.invalidate()
