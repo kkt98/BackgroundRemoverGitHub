@@ -38,15 +38,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.button.setOnClickListener {
-            binding.imageView.setBackgroundColor(Color.parseColor("#964b00"));
+            binding.parentView.setBackgroundColor(Color.parseColor("#964b00"));
         }
 
         binding.button2.setOnClickListener {
-            binding.imageView.setBackgroundColor(Color.parseColor("#00CC66"))
+            binding.parentView.setBackgroundColor(Color.parseColor("#00CC66"))
         }
 
         binding.button3.setOnClickListener {
-            binding.imageView.setBackgroundColor(Color.parseColor("#0080ff"))
+            binding.parentView.setBackgroundColor(Color.parseColor("#0080ff"))
         }
 
     }
